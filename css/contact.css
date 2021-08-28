@@ -42,7 +42,7 @@ section {
 .section-text-2 {
   text-align: center;
   color: #777777;
-  font-family: "Droid Serif";
+  font-family: "Montserrat";
   font-size: 16px;
 }
 
@@ -114,7 +114,7 @@ button {
   .reg-form {
     flex-direction: column;
   
-    margin: 0 auto;
+    
     justify-content: center;
   }
 
