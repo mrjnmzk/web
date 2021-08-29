@@ -248,7 +248,7 @@ footer {
   display: block;
 }
 
-.title::after {
+.title-hey::after {
   content: "";
   width: 300px;
   height: 3px;

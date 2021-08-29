@@ -110,6 +110,21 @@ button {
   border-radius: 5px;
 }
 
+.size {
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sign-form {
+  width: 300px;
+}
+
+.reg-form-2 {
+  margin-top: 76px;
+}
+
 /* @media screen and (max-width: 900px) {
   .reg-form {
     flex-direction: column;
