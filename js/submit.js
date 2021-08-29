@@ -18,7 +18,7 @@ const Submit = function (name, email, subject, message) {
 
 addSubmit.addEventListener('click', () => {
     if (addName.value == '' || addEmail.value == '' || addMessage.value == '')  {
-        alert('Please enter a name');
+        alert('Please fill all fields');
     } else {
         submits.push(new Submit(addName.value, addEmail.value, addSubject.value, addMessage.value))
         fill();
