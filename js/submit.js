@@ -23,6 +23,7 @@ let day = now.getDate();
 let hour = now.getHours();
 let min = now.getMinutes();
 
+
 addSubmit.addEventListener('click', () => {
     if (addName.value == '' || addEmail.value == '' || addMessage.value == '') {
         
@@ -46,12 +47,7 @@ const createSubmit = (subs, el) => {
                         <p class="fans-email">${addEmail.value}</p>
                         <p class="fans-sub">${addSubject.value}</p>
                     </div>
-                    <div class="input-div">
-                        
-                    </div>
-                    <div class="input-div">
-                        
-                    </div>
+                    
                 </div>
                 <div class="reg-textarea text-position">
                 <p>${year}-${month}-${day}, ${hour}:${min}</p>
