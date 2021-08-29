@@ -17,13 +17,17 @@ const Submit = function (name, email, subject, message) {
 }
 
 addSubmit.addEventListener('click', () => {
-    submits.push(new Submit(addName.value, addEmail.value, addSubject.value, addMessage.value))
-    fill();
-    createSubmit();
+    if (addName.value == '' || addEmail.value == '' || addMessage.value == '')  {
+        alert('Please enter a name');
+    } else {
+        submits.push(new Submit(addName.value, addEmail.value, addSubject.value, addMessage.value))
+        fill();
+        createSubmit();
+    }
    
 })
 
-const createSubmit = (subs, item) => {
+const createSubmit = (subs, el) => {
     return `
         <div class="size"> 
             <div class="reg-form reg-form-2">
@@ -48,7 +52,7 @@ const createSubmit = (subs, item) => {
 
 const fill = () => {
     titleArea.innerHTML = "";
-    if (submits.length > 0) {
+    if (submits.length > 0 ) {
         submits.forEach((item, index) => {
             titleArea.innerHTML += createSubmit(item, index);
         })
