@@ -7,12 +7,6 @@ const titleArea = document.querySelector('.title');
 
 let submits = [];
 
-// function Submit (message, subject, email, name) {
-//     this.message = message;
-//     this.subject = subject;
-//     this.email = email;
-//     this.name = name;
-// }
 
 const Submit = function (name, email, subject, message) {
     this.name = name;
