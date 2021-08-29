@@ -17,7 +17,8 @@ const Submit = function (name, email, subject, message) {
 }
 
 addSubmit.addEventListener('click', () => {
-    if (addName.value == '' || addEmail.value == '' || addMessage.value == '')  {
+    if (addName.value == '' || addEmail.value == '' || addMessage.value == '') {
+        
         alert('Please fill all fields with *');
     } else {
         submits.push(new Submit(addName.value, addEmail.value, addSubject.value, addMessage.value))
@@ -28,22 +29,23 @@ addSubmit.addEventListener('click', () => {
 })
 
 const createSubmit = (subs, el) => {
+    // console.log(subs.name);
     return `
         <div class="size"> 
             <div class="reg-form reg-form-2">
                 <div class="sign-area-form sign-form">
                     <div class="input-div">
-                        <p class="fans-name">${subs.name}</p>
+                        <p class="fans-name">${addName.value}</p>
                     </div>
                     <div class="input-div">
-                        <p class="fans-email">${subs.email}</p>
+                        <p class="fans-email">${addEmail.value}</p>
                     </div>
                     <div class="input-div">
-                        <p class="fans-sub">${subs.subject}</p>
+                        <p class="fans-sub">${addSubject.value}</p>
                     </div>
                 </div>
                 <div class="reg-textarea">
-                    <p>${subs.message}</p>
+                    <p>${addMessage.value}</p>
                 </div>
             </div>
         </div>
