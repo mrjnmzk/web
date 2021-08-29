@@ -16,6 +16,13 @@ const Submit = function (name, email, subject, message) {
    
 }
 
+let now = new Date();
+let year = now.getFullYear();
+let month = now.getMonth();
+let day = now.getDate();
+let hour = now.getHours();
+let min = now.getMinutes();
+
 addSubmit.addEventListener('click', () => {
     if (addName.value == '' || addEmail.value == '' || addMessage.value == '') {
         
@@ -34,18 +41,21 @@ const createSubmit = (subs, el) => {
         <div class="size"> 
             <div class="reg-form reg-form-2">
                 <div class="sign-area-form sign-form">
-                    <div class="input-div">
+                    <div class="input-div text-position">
                         <p class="fans-name">${addName.value}</p>
-                    </div>
-                    <div class="input-div">
                         <p class="fans-email">${addEmail.value}</p>
-                    </div>
-                    <div class="input-div">
                         <p class="fans-sub">${addSubject.value}</p>
                     </div>
+                    <div class="input-div">
+                        
+                    </div>
+                    <div class="input-div">
+                        
+                    </div>
                 </div>
-                <div class="reg-textarea">
-                    <p>${addMessage.value}</p>
+                <div class="reg-textarea text-position">
+                <p>${year}-${month}-${day}, ${hour}:${min}</p>
+                <p>${addMessage.value}</p>
                 </div>
             </div>
         </div>

@@ -125,6 +125,12 @@ button {
   margin-top: 76px;
 }
 
+.text-position {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* @media screen and (max-width: 900px) {
   .reg-form {
     flex-direction: column;
